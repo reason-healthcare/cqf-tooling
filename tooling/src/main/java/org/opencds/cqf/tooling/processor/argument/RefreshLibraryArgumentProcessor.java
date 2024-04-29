@@ -87,7 +87,10 @@ public class RefreshLibraryArgumentProcessor {
         lp.versioned = versioned;
         lp.libraryPath = libraryPath;
         lp.libraryOutputDirectory = libraryOutputDirectory;
-       
+
+        // Hack: Fix to use actual arg...
+        lp.shouldApplySoftwareSystemStamp = false;
+
         return lp;
     }
 }
